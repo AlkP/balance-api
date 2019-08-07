@@ -7,7 +7,7 @@ module V1
 
     def create
       user = User.new(user_params)
-      if @user.save
+      if user.save
         render json: user
       else
         payload = {
